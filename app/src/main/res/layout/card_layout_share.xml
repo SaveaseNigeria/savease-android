@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linCard"
+        android:background="@drawable/ic_white"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="20.19dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="left"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                android:fontFamily="@font/sfprodisplaymedium"
+                android:layout_width="wrap_content"
+                android:layout_gravity="left"
+                android:layout_height="wrap_content"
+                android:text="Deposit Voucher"
+                    android:layout_marginLeft="5dp"
+                android:textColor="#131D33"
+                    android:textStyle="bold"
+                android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/txtVoucherDatePrinted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="Date"
+                    android:textColor="#131D33"
+                    android:textSize="16sp" />
+
+
+
+                <TextView
+                    android:id="@+id/txtVoucherAmountShare"
+                    android:fontFamily="@font/sfprodisplaybold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Message"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#131D33"
+
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtVoucherPinSerialNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/sfprodisplaymedium"
+                        android:text="Date"
+                        android:textColor="#131D33"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/txtVoucherPinShare"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/sfprodisplaybold"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="#131D33"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:id="@+id/txtVoucherDateExpiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="Date"
+                    android:textColor="#131D33"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txtVoucherMerchant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="Date"
+                    android:textColor="#131D33"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txtVoucherTerminalID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="Date"
+                    android:textColor="#131D33"
+                    android:textSize="16sp" />
+
+
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="Thank you for using savease deposit voucher"
+                    android:textColor="#131D33"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="www.savease.ng"
+                    android:textColor="#131D33"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="info@savease.ng"
+                    android:textColor="#131D33"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/sfprodisplaymedium"
+                    android:text="09090692222, 08027226627"
+                    android:textColor="#131D33"
+                    android:textSize="14sp" />
+
+
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bubble"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="11sp" />
+
+
+
+</LinearLayout>

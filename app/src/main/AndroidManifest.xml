@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="saveaseng.ng.savease">
+
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="saveaseng.ng.savease.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/savease"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/savease_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDvxS7MLVAAoRckD-ZwFrl8k1wGl0EKSKA" />
+
+        <activity
+            android:name="saveaseng.ng.savease.Activities.VendorsAround"
+            android:label="@string/title_activity_vendors_around">
+
+        </activity>
+        <activity android:name="saveaseng.ng.savease.Activities.AddBank"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="saveaseng.ng.savease.Activities.BankActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.VendorSettings"
+            android:label="@string/title_activity_vendor_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.VendorHome"
+            android:label="@string/title_activity_vendor_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.WithdrawActivity"
+            android:label="@string/title_activity_withdraw"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="default_channel_id" />
+
+        <activity
+            android:name="saveaseng.ng.savease.Activities.Test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.Settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Auth.ChangePassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.FundAccount"
+            android:label="@string/title_activity_fund_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.AccountOfficer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.VerifyHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="saveaseng.ng.savease.Activities.LatestNews" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.FaqActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.UserGuide"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Complaint"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.aboutUs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.NotificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="saveaseng.ng.savease.Activities.CheckOutActivity" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.ForgotPassword"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.VoucherTeable"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Auth.RegisterationActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Auth.AuthWelcome"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Utils.Welcome"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.TransactionStatementActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.AddBeneficiaryActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.TransferActicvity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.DepositActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.VerifyPinActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.BuyVoucherActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Auth.SignupVendor"
+            android:label=""
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Activities.Home"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="saveaseng.ng.savease.Auth.SignupCategory"
+            android:label=""
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="saveaseng.ng.savease.Activities.DeviceList" />
+        <activity
+            android:name="saveaseng.ng.savease.MainActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="saveaseng.ng.savease.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="saveaseng.ng.savease.Auth.Signup"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="saveaseng.ng.savease.Auth.Login"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="co.paystack.android.PublicKey"
+            android:value="pk_live_95c487e82efab6003e54cbeaa7bcf9bfda683f0f" />
+    </application>
+
+</manifest>

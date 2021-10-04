@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    tools:context=".Activities.FaqActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="FAQ"
+        android:id="@+id/tFaq"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfprodisplayheavy"
+        android:textSize="18dp"
+        android:background="@color/colorAccent"
+        />
+
+
+
+    <ExpandableListView
+        android:layout_above="@id/down"
+        android:id="@+id/lvExp"
+        android:layout_below="@id/tFaq"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprodisplaythin"
+            android:text="Copyrights © 2016 All Rights Reserved. Powered by Savease Nigeria Limited, a sub-class of Savease Africa."
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

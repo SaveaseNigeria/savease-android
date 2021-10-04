@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".Auth.SignupVendor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:text="VENDOR SIGNUP"/>
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:background="#fff"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="2dp">
+
+        </LinearLayout>
+        <EditText
+
+            android:id="@+id/edtVendorSignupFirstName"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter First Name"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupLastName"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="5dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Last Name"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupPhone"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="5dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupEmail"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupUsername"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Username"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+
+
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupPassword"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupConfirmPassword"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/edtVendorBusinessType"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Business Type"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupCompanyName"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawablePadding="5dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Company Name"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupAddress"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Address"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+
+
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupCacReg"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter CAC Registration Number"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <EditText
+
+            android:id="@+id/edtVendorSignupBvnNumber"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Bvn Number"
+            android:inputType="number"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <Button
+
+            android:id="@+id/btnVendorSignup"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/_dark"
+            android:foregroundTint="@color/darkop"
+            android:text="Signup"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/txtVendorLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center"
+            android:text="Already have an account? Login"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

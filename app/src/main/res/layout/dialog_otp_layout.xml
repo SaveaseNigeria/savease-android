@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/bne"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/imgBackPinView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_navigate" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="20.19dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sfprodisplayheavy"
+        android:text="Verify your phone number"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:text="We have sent an OTP to your number "
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp" />
+
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cursorVisible="false"
+        app:hint="0"
+        app:inputType="number"
+        android:layout_marginTop="50dp"
+        app:password="false"
+        app:pinBackground="@drawable/example_drawable"
+        app:pinHeight="40dp"
+
+        app:pinLength="6"
+        app:pinWidth="35dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

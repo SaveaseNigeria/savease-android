@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".Activities.Settings">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="Settings"
+        android:id="@+id/tFaq"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfprodisplayheavy"
+        android:textSize="18dp"
+        android:background="@color/colorAccent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/tFaq"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:id="@+id/linChangePassword"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:textSize="16dp"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="Change Password"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/imgNext"
+                android:src="@drawable/next"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:layout_below="@id/imgNext"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/linDivide"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:background="#9C8C8C">
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprodisplaythin"
+            android:text="Copyrights © 2016 All Rights Reserved. Powered by Savease Nigeria Limited, a sub-class of Savease Africa."
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

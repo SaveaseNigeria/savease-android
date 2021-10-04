@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/bne"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+    <ImageButton
+        android:id="@+id/imgBackPinView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_navigate" />
+
+
+    <ImageView
+        android:id="@+id/circularImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_lock"
+        android:layout_marginTop="30dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:text="Set up Pin"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+       />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:textAlignment="center"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:text="For your security, Pin is required for every transaction made on your Savease wallet"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:text="Set up Pin"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/setUpPinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cursorVisible="false"
+        app:hint="0"
+        app:inputType="number"
+        app:password="true"
+        app:pinBackground="@drawable/example_drawable"
+        app:pinHeight="40dp"
+        app:pinLength="4"
+        app:pinWidth="40dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:text="Re-enter Pin"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/confirmPinVIew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cursorVisible="false"
+        app:hint="0"
+        app:inputType="number"
+        app:password="true"
+        app:pinBackground="@drawable/example_drawable"
+        app:pinHeight="40dp"
+        app:pinLength="4"
+        app:pinWidth="40dp"/>
+
+
+    <Button
+        android:id="@+id/btnContinueRegPinVIew"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bubble"
+        android:foregroundTint="@color/colorAccent"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="11sp" />
+
+    </LinearLayout>
+
+</ScrollView>

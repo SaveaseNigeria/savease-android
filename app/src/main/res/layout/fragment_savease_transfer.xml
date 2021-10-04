@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:padding="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Transfer.SaveaseTransfer">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtSaveaseAccountNumberTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="Enter Account Number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/edtAccountNameSavease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sfprodisplaylight"
+            android:text="Account Name:"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edtTransferAmount"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="Amount"
+            android:inputType="number"
+            android:padding="10dp"
+
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edtTransferNarration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="Narration"
+            android:inputType="text"
+            android:padding="10dp"
+
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:text="Pin Code :"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/edtPinCode"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                app:cursorVisible="false"
+                app:hint="0"
+                app:inputType="number"
+                app:password="true"
+                app:pinBackground="@drawable/example_drawable"
+                app:pinHeight="40dp"
+                app:pinLength="4"
+                app:pinWidth="40dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:text="*Please, do not disclosure your secret pin to anyone "
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnMakeSaveaseTransfer"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bubble"
+            android:foregroundTint="@color/colorAccent"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

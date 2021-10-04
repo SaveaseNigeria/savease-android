@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bne"
+    android:padding="16dp"
+    tools:context=".Auth.Signup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/imgBackSignup"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_navigate" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/splashIMAGE"
+            android:layout_width="150dp"
+            android:layout_height="20.19dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/sfprodisplayheavy"
+            android:text="Personal Information"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edtUserSignupFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="Firstname"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+
+        <EditText
+            android:id="@+id/edtUserSignupLastName"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="Lastname"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edtUserSignupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+
+
+        <Button
+            android:id="@+id/btnUserSignup"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/bubble"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

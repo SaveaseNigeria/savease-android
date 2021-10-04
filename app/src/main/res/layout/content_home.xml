@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bne">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/darktrans"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/horizontalScrollView"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rvOne"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/toolbarBen"
+                android:background="@drawable/rectangle"
+                android:padding="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/card_rounded">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtAccountBalance"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="24dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/sfprodisplaymedium"
+                                android:text=""
+                                android:textColor="#131D33"
+                                android:textSize="17sp"
+                                android:textStyle="bold" />
+                            <Button
+
+                                android:layout_marginRight="45dp"
+                                android:id="@+id/btnAccountOfficer"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/bubble2"
+                                android:fontFamily="@font/sfprodisplaylight"
+                                android:layout_width="wrap_content"
+                                android:text="Account Officer"
+                                android:textColor="#fff"
+                                android:textAllCaps="false"
+                                android:textStyle="bold"
+                                android:layout_marginTop="15dp"
+                                android:padding="8dp"
+                                android:textSize="11sp"
+                                android:layout_height="30dp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="#F2F3F8">
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/txtAccountName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="#131D33"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtAccountNameNOne"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txtAccountName"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textAlignment="center"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="Account Name"
+                                    android:textColor="#3A5160"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/txtAccountNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text=""
+                                    android:layout_marginTop="5dp"
+                                    android:textAlignment="center"
+                                    android:textColor="#131D33"
+                                    android:layout_centerHorizontal="true"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txtAccountNumber"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="Account Number"
+                                    android:textAlignment="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="#3A5160"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content">
+
+
+                                <TextView
+                                    android:id="@+id/txtAccountType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text=""
+                                    android:layout_centerHorizontal="true"
+                                    android:textAlignment="center"
+                                    android:textColor="#131D33"
+                                    android:textSize="13sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/txtAccountType"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:textAlignment="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="UserType"
+                                    android:textColor="#3A5160"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+
+                android:id="@+id/scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="20dp"
+                            android:fontFamily="@font/sfprodisplaymedium"
+                            android:text="Welcome,"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="20dp"
+                            android:fontFamily="@font/sfprodisplaylight"
+                            android:text="Here are an array of functions you can currently perform from this dashboard."
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+                                <ImageView
+                                    android:id="@+id/imgVendorNearU"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_location" />
+
+                                <ImageView
+                                    android:id="@+id/imgVerifyVoucher"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_weight="1"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_verified" />
+
+
+                                <ImageView
+                                    android:id="@+id/imgMakeDeposit"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="30dp"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_wallet" />
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linfirst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="30dp"
+                                    android:text="  Vendors"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfprodisplaylight"
+
+                                    android:text="Verify Pin"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="Deposit "
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgTransferFunds"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="30dp"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_transfer" />
+
+
+                                <ImageView
+                                    android:id="@+id/imgWithdraw"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="30dp"
+                                    android:layout_weight="1"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_withdraw" />
+
+                                <ImageView
+
+                                    android:id="@+id/imgAddBeneficiary"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_debit_card" />
+
+
+
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linsec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:paddingRight="10dp"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="Withdraw"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:paddingLeft="5dp"
+                                    android:text="Fund Account  "
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="Transfer"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+
+                                <ImageView
+
+                                    android:id="@+id/imgStatment"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="#fff"
+                                    android:elevation="7dp"
+                                    android:padding="15dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/ic_document" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/sfprodisplaylight"
+                                    android:text="Statement"
+                                    android:textAlignment="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_below="@+id/imgStatment"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="170dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="30dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/sfprodisplayheavy"
+                                        android:text="We help millions of people save their money. "
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="3dp"
+                                        android:fontFamily="@font/sfprodisplaylight"
+                                        android:text="Set a savings goal today, and we would help you achieve this goal. Our aim is to assist you build your money through savings into capital. We are passionate about this, because we understand that money habits are difficult to cultivate. Trust us to help you."
+                                        android:textColor="@color/colorAccent"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+
+                                        android:layout_width="170dp"
+                                        android:layout_height="30dp"
+                                        android:layout_marginTop="3dp"
+                                        android:background="@drawable/bubble2"
+                                        android:fontFamily="@font/sfprodisplaylight"
+                                        android:padding="8dp"
+                                        android:text="Set Goal"
+                                        android:textColor="#fff"
+                                        android:textSize="11sp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/linthird"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal" />
+
+
+                        </LinearLayout>
+
+
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:src="@drawable/bthree"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"/>
+
+                        </android.support.v7.widget.CardView>
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/bfour"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/bfive"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"/>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="6dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/bsix"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"/>
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="6dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:id="@+id/imgPromotionalImage"
+                                android:layout_width="match_parent"
+                                android:src="@drawable/bone"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"/>
+
+                        </android.support.v7.widget.CardView>
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginLeft="15dp"
+                            app:cardCornerRadius="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardElevation="6dp"
+                            android:layout_height="150dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:src="@drawable/btwo"
+                                android:scaleType="centerCrop"
+                                android:layout_height="match_parent"/>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/down"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:layout_marginLeft="2dp"
+                        android:elevation="7dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/logoutBottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_shutdown" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+                                android:text="Logout"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+                
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:elevation="6dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="15dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_person" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+
+                                android:text="Profile"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:elevation="6dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="14dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_complain" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+
+                                android:text="Complaint"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:elevation="6dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="18dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_user_guide" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+                                android:text="User Guide"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:elevation="6dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="18dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_business" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+                                android:text="FAQ"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:elevation="6dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="18dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_about" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+                                android:text="About Us"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentPadding="5dp"
+                        android:elevation="6dp"
+                        card_view:cardCornerRadius="6dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="6dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:background="#fff"
+                                android:padding="18dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_notification" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/sfprodisplaylight"
+                                android:text="Notification"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="9sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/sfprodisplaythin"
+            android:padding="5dp"
+            android:text="Copyrights © 2016 All Rights Reserved. Powered by Savease Nigeria Limited, a sub-class of Savease Africa."
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

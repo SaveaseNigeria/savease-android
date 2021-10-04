@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bne"
+    android:paddingRight="14dp"
+    android:paddingLeft="14dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="20.19dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dear User,"
+            android:fontFamily="@font/sfprodisplaylight"
+            android:textSize="16sp"
+
+            />
+
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seems that you have not completely activated your account, this can be done by verifying your BVN below.\n\n A sum of N10 is charged for the verification purpose so please ensure that your information like first name and last name are the same as your BVN ,else contact your account officer."
+            android:fontFamily="@font/sfprodisplaylight"
+            android:textSize="16sp"
+
+            />
+
+
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Verify BVN"
+            android:fontFamily="@font/sfprodisplayheavy"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            />
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edtBVNNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:focusable="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bubble3"
+            android:gravity="center_vertical"
+            android:hint="BVN"
+            android:inputType="number"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnVerifyBvnDialog"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bubble2"
+        android:fontFamily="sans-serif"
+        android:text="Verify"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

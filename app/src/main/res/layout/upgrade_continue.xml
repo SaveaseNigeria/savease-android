@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bne"
+    android:paddingRight="14dp"
+    android:paddingLeft="14dp"
+    android:layout_height="match_parent">
+
+
+
+    <ImageButton
+        android:id="@+id/imgBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_navigate" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_above="@id/btnUpgrade"
+       android:layout_marginBottom="10dp"
+       android:layout_below="@id/imgBack">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+           android:layout_marginLeft="30dp"
+           android:layout_marginRight="30dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_width="150dp"
+               android:layout_height="20.19dp"
+               android:layout_marginTop="10dp"
+               android:src="@drawable/logo" />
+
+           <TextView
+               android:layout_marginTop="20dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Please, provide the information below to help us create a Savease Business Account for you."
+               android:fontFamily="@font/sfprodisplaylight"
+               android:textSize="14sp"
+
+               />
+
+
+           <EditText
+               android:id="@+id/edtBusinessAddress"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Business Address"
+               android:inputType="textCapSentences"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+              android:id="@+id/edtBusinessTown"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Business Town"
+               android:inputType="textCapSentences"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+              android:id="@+id/edtBusinessState"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Business State"
+               android:inputType="textEmailAddress"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+               android:id="@+id/edtHomeAddress"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Home Address"
+               android:inputType="textCapSentences"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+               android:id="@+id/edtHomeState"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Home State"
+               android:inputType="textEmailAddress"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+                android:id="@+id/edtHomeTown"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Home Town"
+               android:inputType="text"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+               android:id="@+id/edtNextKin"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Next of Kin"
+               android:inputType="text"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <EditText
+                android:id="@+id/edtNextKinPhone"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Next of Kin Telephone"
+               android:inputType="phone"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+           <com.jaredrummler.materialspinner.MaterialSpinner
+               android:id="@+id/spinRelationship"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_below="@id/txtdesp"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="10dp"
+               android:hint="Relationship with Kin"
+               android:textColorHint="@color/colorAccent"
+               android:textSize="12sp"
+               app:ms_arrow_tint="@color/colorAccent"
+               app:ms_background_color="@color/ash"
+               app:ms_background_selector="@color/colorAccent"
+               app:ms_dropdown_height="wrap_content"
+               app:ms_dropdown_max_height="350dp"
+               app:ms_hint_color="@color/darkop"
+               app:ms_text_color="#fff" />
+
+           <EditText
+               android:id="@+id/edtNextKinOther"
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/bubble3"
+               android:gravity="center_vertical"
+               android:hint="Other"
+               android:visibility="gone"
+               android:inputType="text"
+               android:padding="10dp"
+               android:textColor="@color/colorAccent"
+               android:textSize="13sp" />
+
+
+
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnUpgrade"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bubble2"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

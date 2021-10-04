@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/darkop</item>
+        <item name="android:navigationBarColor">@color/darkop</item>
+    </style>
+
+    <style name="TextLabel" parent="AppTheme">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/darkgold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="colorPrimary">@color/darkgold</item>
+        <item name="colorPrimaryDark">@color/darkgold</item>
+        <item name="colorAccent">@color/darkgold</item>
+        <item name="colorControlNormal">@color/darkgold</item>
+        <item name="colorControlActivated">@color/darkgold</item>
+    </style>
+</resources>

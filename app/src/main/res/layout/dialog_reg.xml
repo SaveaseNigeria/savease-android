@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bne"
+    android:paddingRight="14dp"
+    android:paddingLeft="14dp"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="20.19dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo" />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Savease,"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:textSize="14sp"
+
+        />
+
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/thank_you_for_download_the_savease_app_now_that_you_are_about_registering_to_the_savease_network_please_ensure_to_use_appropriate_information_as_it_appears_on_your_bvn_bank_verification_number_we_mean_firstname_lastname_and_telephone_number_must_be_exactly_as_available_on_your_bvn_this_is_an_important_criteria_to_successfully_activating_your_savease_you_will_not_be_able_to_perform_certain_transaction_if_your_account_is_not_verified_and_linked_to_a_bvn"
+        android:fontFamily="@font/sfprodisplaylight"
+        android:textSize="14sp"
+
+        />
+
+
+    <TextView
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sfprodisplaylight"
+        android:textSize="14sp"
+
+        />
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/btnRegisterDialog"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bubble2"
+        android:fontFamily="sans-serif"
+        android:text="Continue"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

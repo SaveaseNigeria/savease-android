@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    tools:context=".Activities.UserGuide">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="User Guide"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/sfprodisplayheavy"
+        android:textSize="18dp"
+        android:id="@+id/txtabt"
+        android:background="@color/colorAccent"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/txtabt"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:id="@+id/txtUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dear Prospective User,"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:textSize="14sp"
+
+                />
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/savease_was_established_to_create_simple_solutions_to_complex_deposit_and_savings_problem_it_is_a_useful_solution_that_will_promote_effective_savings_habit_we_have_created_a_technology_which_uses_instant_deposit_prepaid_scratch_cards_pins_offering_its_users_a_simple_and_convenient_way_to_make_deposits_into_distinctive_bank_accounts_across_the_continent_starting_from_nigeria_with_this_technological_breakthrough_you_can_make_deposit_payments_from_the_comfort_of_anywhere_to_verify_the_validity_of_a_voucher_simply_click_on_the_verify_icon_on_the_dashboard_insert_the_prepaid_pin_then_click_on_the_verify_button_a_pop_up_will_display_on_your_screen_with_information_about_the_card_to_make_a_transfer_transaction_click_on_the_transfer_icon_on_the_dashboard_select_the_appropriate_account_or_wallet_type_from_the_dropdown_menu_you_could_select_savease_wallet_account_if_you_intend_to_make_a_transfer_into_a_savease_account_or_select_bank_account_if_you_intend_to_make_a_deposit_to_a_bank_account_other_than_savease_insert_the_account_number_the_amount_to_be_transferred_a_narration_for_the_transaction_your_secret_pin_then_proceed_to_click_on_the_continue_button_select_confirm_in_the_attestation_box_on_the_screen_or_select_discard_to_discontinue_the_transaction_the_account_so_provided_will_be_automatically_credited_with_the_amount_so_transfer_to_make_a_deposit_transaction_click_on_the_deposit_icon_on_the_dashboard_select_the_appropriate_account_or_wallet_type_from_the_dropdown_menu_you_could_select_my_wallet_account_if_you_intend_to_make_a_deposit_into_your_account_or_select_other_wallet_account_if_you_intend_to_make_a_deposit_to_a_different_recipient_insert_the_account_number_voucher_pin_followed_with_a_narration_for_the_transaction_then_proceed_to_click_the_continue_button_the_account_so_provided_will_be_automatically_credited_with_the_value_of_the_pin_provided_to_do_a_buy_voucher_transaction_make_sure_you_have_adequate_funds_in_your_account_else_fund_your_account_by_clicking_on_the_fund_account_icon_then_follow_through_the_process_using_your_atm_card_before_initiating_this_process_if_account_is_adequately_funded_for_a_potential_transaction_kindly_choose_the_card_denomination_from_the_dropdown_tab_insert_the_quantity_of_voucher_to_be_purchased_into_the_quantity_box_followed_by_your_secret_pin_code_proceed_to_clicking_the_buy_card_button_click_on_terms_and_conditions_if_you_have_not_read_it_before_or_proceed_to_check_the_check_box_to_agree_and_accept_the_terms_and_conditions_proceed_to_place_order_to_complete_your_purchase_or_the_discard_button_to_discard_the_purchase_if_transaction_is_successful_a_successful_alert_will_be_displayed_else_a_not_successful_message_will_be_prompted_thereafter_check_your_voucher_table_from_your_dashboard_and_filter_the_drop_down_tab_to_display_used_cards_the_voucher_table_is_an_environment_which_helps_you_with_the_arrangement_and_management_of_voucher_in_this_section_you_are_presented_with_used_and_unused_cards_to_view_this_select_the_voucher_table_icon_on_your_dashboard_either_select_from_the_dropdown_tab_to_display_your_entire_used_voucher_or_all_unused_vouchers_the_used_voucher_presents_all_details_about_a_used_voucher_it_supplies_you_information_ranging_from_time_date_of_use_name_of_the_user_among_other_details_to_fund_an_account_select_the_fund_account_icon_on_your_dashboard_proceed_to_provide_your_atm_card_details_as_requested_on_the_screen_a_onetime_password_otp_will_be_sent_to_the_telephone_number_of_the_atm_card_to_confirm_ownership_of_the_card_provide_this_otp_and_your_savease_account_will_be_funded_with_the_amount_so_funded_to_view_your_transaction_summary_simply_select_the_statement_icon_on_your_dashboard_you_will_be_presented_with_a_log_of_all_your_transactions_the_account_officer_icon_on_your_dashboard_directs_you_to_the_assigned_savease_personnel_whose_duty_is_to_help_you_understand_money_help_you_with_your_savings_and_ultimately_help_you_gain_financial_freedom_he_she_also_helps_you_in_resolving_any_technical_complaints_that_may_be_observed_feel_free_to_contact_him_her_through_the_channels_so_provided_notifications_are_sent_to_your_notification_box_icon_on_the_dashboard_below_please_ensure_to_always_read_all_messages_that_appear_in_this_box_as_products_and_offers_will_be_sent_to_your_box_transaction_alert_are_stored_in_the_message_icon_that_appears_on_the_top_right_view_of_the_dashboard_here_you_can_confirm_or_refer_transaction_when_necessary_please_ensure_to_send_feedback_through_complaint_icon_seen_below_the_dashboard_thank_you_for_trusting_us_to_help_you"
+                android:fontFamily="@font/sfprodisplaylight"
+                android:textSize="14sp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TextView
+
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfprodisplaythin"
+            android:text="Copyrights © 2016 All Rights Reserved. Powered by Savease Nigeria Limited, a sub-class of Savease Africa."
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

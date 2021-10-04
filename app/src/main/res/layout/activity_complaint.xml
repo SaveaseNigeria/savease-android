@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/bne"
+    android:orientation="vertical"
+    tools:context=".Complaint">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@id/down"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:text="Complaint"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfprodisplayheavy"
+                android:textSize="18dp"
+                android:background="@color/colorAccent"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtdesp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sfprodisplaylight"
+                    android:padding="5dp"
+                    android:text="Do you have any complain you would like us to resolve with you? Kindly provide your compliant information in the field provided below."
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/sfprodisplayheavy"
+                        android:text="Title"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtTitleComplaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Title"
+                        android:inputType="text"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/sfprodisplayheavy"
+                        android:text="Feedback"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtMessageComplaint"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@drawable/bubble7"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Enter Message"
+                        android:minLines="2"
+                        android:maxLines="100"
+                        android:scrollbars="none"
+                        android:inputType="textMultiLine"
+                        />
+
+
+                    <Button
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bubble4"
+                        android:fontFamily="@font/sfprodisplaylight"
+                        android:layout_width="75dp"
+                        android:text="Send"
+                        android:id="@+id/btnSendComplain"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="20dp"
+                        android:padding="8dp"
+                        android:textSize="11sp"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/sfprodisplaylight"
+            android:text="You may also contact us through the options below: \nTelephone: 09064214402, 09064215137\nEmail: compliant@savease.ng,support@savease.ng\n            care@savease.ng,enquiry@savease.ng."
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/sfprodisplaythin"
+            android:text="Copyrights © 2016 All Rights Reserved. Powered by Savease Nigeria Limited, a sub-class of Savease Africa."
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,228 @@
+package saveaseng.ng.savease.Activities;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.shashank.sony.fancydialoglib.Animation;
+import com.shashank.sony.fancydialoglib.FancyAlertDialog;
+import com.shashank.sony.fancydialoglib.FancyAlertDialogListener;
+import com.shashank.sony.fancydialoglib.Icon;
+
+import org.ksoap2.SoapEnvelope;
+import org.ksoap2.SoapFault;
+import org.ksoap2.serialization.SoapObject;
+import org.ksoap2.serialization.SoapSerializationEnvelope;
+import org.ksoap2.transport.HttpResponseException;
+import org.ksoap2.transport.HttpTransportSE;
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.IOException;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
+import saveaseng.ng.savease.Auth.AuthWelcome;
+import saveaseng.ng.savease.R;
+
+public class VerifyPinActivity extends AppCompatActivity {
+
+    private static final String METHOD_NAME = "VerifyPin";
+    private static final String SOAP_ACTION = "http://savease.ng/VerifyPin";
+    private static final String URL = "http://savease.ng/webservice1.asmx";
+    private static final String NAMESPACE = "http://savease.ng/";
+    private EditText edtVoucher;
+    private Button btnCheckVoucher;
+    private String voucher;
+    ImageButton back;
+    Dialog dialog;
+    boolean connected = false;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_verify_pin);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+        edtVoucher = (EditText)findViewById(R.id.edtVerifyPin);
+        btnCheckVoucher = (Button)findViewById(R.id.btnVerify);
+        back = (ImageButton)findViewById(R.id.imgBackVerify);
+        dialog = new Dialog(this);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(VerifyPinActivity.this, AuthWelcome.class));
+                finish();
+            }
+        });
+        final SweetAlertDialog pDialog = new SweetAlertDialog(VerifyPinActivity.this, SweetAlertDialog.ERROR_TYPE);
+
+        btnCheckVoucher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+             String voucher = edtVoucher.getText().toString().trim();
+                ConnectivityManager connectivityManager = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() == NetworkInfo.State.CONNECTED ||
+                        connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() == NetworkInfo.State.CONNECTED) {
+                    //we are connected to a network
+                    connected = true;
+                    if (voucher.isEmpty()){
+                        Toast.makeText(VerifyPinActivity.this, "You need a input a voucher pin to actually verify", Toast.LENGTH_LONG).show();
+                        return;
+                    }else {
+                        new verifyVoucher().execute(voucher);
+                    }
+                }
+                else {
+                    connected = false;
+                    pDialog.setTitleText("Error")
+                           .setContentText("Seems you are not connected to the internet, please do so and try again").show();
+
+                }
+            }
+        });
+    }
+
+    private class verifyVoucher extends AsyncTask<String,String,String>{
+
+        SweetAlertDialog pDialog = new SweetAlertDialog(VerifyPinActivity.this, SweetAlertDialog.PROGRESS_TYPE);
+        SweetAlertDialog sDialog = new SweetAlertDialog(VerifyPinActivity.this, SweetAlertDialog.SUCCESS_TYPE);
+        SweetAlertDialog fDialog = new SweetAlertDialog(VerifyPinActivity.this, SweetAlertDialog.ERROR_TYPE);
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            this.pDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
+            this.pDialog.setTitleText("Loading");
+           this.pDialog.setCancelable(false);
+           this.pDialog.show();
+        }
+
+        @Override
+        protected String doInBackground(String... voids) {
+
+            String value =  voids[0];
+
+            SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
+            request.addProperty("inputParame",value);
+
+
+            SoapSerializationEnvelope envelope = new      SoapSerializationEnvelope(SoapEnvelope.VER11);
+            envelope.implicitTypes = true;
+            envelope.setOutputSoapObject(request);
+            envelope.dotNet = true;
+
+            HttpTransportSE httpTransport = new HttpTransportSE(URL);
+            httpTransport.debug = true;
+            try {
+                httpTransport.call(SOAP_ACTION, envelope);
+            } catch (HttpResponseException e) {
+                // TODO Auto-generated catch block
+                Log.e("HTTPLOG", e.getMessage());
+                e.printStackTrace();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                Log.e("IOLOG", e.getMessage());
+                e.printStackTrace();
+            } catch (XmlPullParserException e) {
+                // TODO Auto-generated catch block
+                Log.e("XMLLOG", e.getMessage());
+                e.printStackTrace();
+            } //send request
+            Object  result = null;
+            try {
+                result = (Object )envelope.getResponse();
+                Log.i("RESPONSE",String.valueOf(result)); // see output in the console
+            } catch (SoapFault e) {
+                // TODO Auto-generated catch block
+                Log.e("SOAPLOG", e.getMessage());
+                e.printStackTrace();
+            }
+            return String.valueOf(result);
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            this.pDialog.dismiss();
+
+            if (s.contains("Invalid")){
+                new FancyAlertDialog.Builder(VerifyPinActivity.this)
+                        .setTitle("Failed")
+                        .setBackgroundColor(Color.parseColor("#DF5C4E"))
+                        .setMessage("The voucher is invalid")
+                        .setPositiveBtnText("Done")
+                        .setPositiveBtnBackground(Color.parseColor("#DF5C4E"))
+                        .setNegativeBtnBackground(Color.parseColor("#ffffff"))
+                        .setAnimation(Animation.SLIDE)
+                        .isCancellable(true)
+                        .setIcon(R.drawable.ic_cancel, Icon.Visible)
+                        .OnPositiveClicked(new FancyAlertDialogListener() {
+                            @Override
+                            public void OnClick() {
+                                dialog.dismiss();
+
+                            }
+                        })
+                        .build();
+
+
+            }else if (s.contains("Voucher")){
+                new FancyAlertDialog.Builder(VerifyPinActivity.this)
+                        .setTitle("Failed")
+                        .setBackgroundColor(Color.parseColor("#DF5C4E"))
+                        .setMessage("The voucher has already being used")
+                        .setPositiveBtnText("Done")
+                        .setPositiveBtnBackground(Color.parseColor("#DF5C4E"))
+                        .setNegativeBtnBackground(Color.parseColor("#ffffff"))
+                        .setAnimation(Animation.SLIDE)
+                        .isCancellable(true)
+                        .setIcon(R.drawable.ic_cancel, Icon.Visible)
+                        .OnPositiveClicked(new FancyAlertDialogListener() {
+                            @Override
+                            public void OnClick() {
+                                dialog.dismiss();
+
+                            }
+                        })
+                        .build();
+
+
+            }else {
+                new FancyAlertDialog.Builder(VerifyPinActivity.this)
+                        .setTitle("Success")
+                        .setBackgroundColor(Color.parseColor("#212435"))
+                        .setMessage(s)
+                        .setPositiveBtnText("Done")
+                        .setPositiveBtnBackground(Color.parseColor("#212435"))
+                        .setNegativeBtnBackground(Color.parseColor("#ffffff"))
+                        .setAnimation(Animation.SLIDE)
+                        .isCancellable(true)
+                        .setIcon(R.drawable.ic_checked, Icon.Visible)
+                        .OnPositiveClicked(new FancyAlertDialogListener() {
+                            @Override
+                            public void OnClick() {
+                                dialog.dismiss();
+
+                            }
+                        })
+                        .build();
+
+
+            }
+
+        }
+    }
+}

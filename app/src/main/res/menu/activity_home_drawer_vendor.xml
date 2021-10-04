@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/verifyV"
+            android:icon="@drawable/ic_verified"
+            android:title="Verify Pin"/>
+
+        <item
+            android:id="@+id/makeTransfer"
+            android:icon="@drawable/ic_transfer"
+            android:title="Transfer" />
+
+
+        <item
+            android:id="@+id/userGuide"
+            android:icon="@drawable/ic_user_guide"
+            android:title="User Guide" />
+
+
+        <item
+            android:id="@+id/complain"
+            android:icon="@drawable/ic_complain"
+            android:title="Complaint" />
+
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+
+        <item
+            android:id="@+id/appSettings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_shutdown"
+            android:title="Logout" />
+
+
+    </group>
+
+</menu>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    tools:context=".Deposit.BankDeposit">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <EditText
+
+            android:id="@+id/edtVouchPin"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Voucher Pin"
+            android:inputType="number"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <EditText
+
+            android:id="@+id/edtVouchPinSN"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Voucher Serial Number"
+            android:inputType="number"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinBankType"
+            android:layout_width="match_parent"
+            android:layout_below="@id/txt"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="Select Bank "
+            android:textColorHint="#fff"
+            app:ms_arrow_tint="#fff"
+            app:ms_background_color="@color/colorAccent"
+            app:ms_dropdown_height="wrap_content"
+            app:ms_dropdown_max_height="350dp"
+            android:layout_marginBottom="10dp"
+            app:ms_hint_color="@color/darkop"
+            app:ms_text_color="#fff" />
+
+
+        <EditText
+
+            android:id="@+id/edtSaveaseAccountNumber"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Enter Account Number"
+            android:inputType="number"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <EditText
+
+            android:id="@+id/edtSaveaseAccountName"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Account Name"
+            android:inputType="text"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+        <EditText
+
+            android:id="@+id/edtVoucherAmount"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bubble"
+            android:gravity="center_vertical"
+            android:hint="Amount"
+            android:inputType="number"
+            android:paddingEnd="32dp"
+            android:paddingStart="32dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#8effffff"
+            android:textSize="20sp" />
+
+
+
+        <Button
+
+            android:id="@+id/btnMakeBankDeposit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/_dark"
+            android:foregroundTint="@color/darkop"
+            android:text="`Make Deposit"
+            android:layout_marginBottom="15dp"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+</ScrollView>

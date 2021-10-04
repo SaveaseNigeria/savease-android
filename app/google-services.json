@@ -1,0 +1,207 @@
+{
+  "project_info": {
+    "project_number": "654386570233",
+    "firebase_url": "https://savease-nigeria.firebaseio.com",
+    "project_id": "savease-nigeria",
+    "storage_bucket": "savease-nigeria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654386570233:android:97bcb23e8c876ace",
+        "android_client_info": {
+          "package_name": "com.saveaseng.savease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sP7pK377bFHTg4jmFN5807EqFPRdQ-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "654386570233-dmh6etc3ui3borg66rilu1asoosilb4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sav.ng"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654386570233:android:a91290c008930c41061328",
+        "android_client_info": {
+          "package_name": "saveaseng.ng.savease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sP7pK377bFHTg4jmFN5807EqFPRdQ-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "654386570233-dmh6etc3ui3borg66rilu1asoosilb4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sav.ng"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654386570233:android:a438d4e073f27b61",
+        "android_client_info": {
+          "package_name": "saveaseng.ng.saveease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sP7pK377bFHTg4jmFN5807EqFPRdQ-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "654386570233-dmh6etc3ui3borg66rilu1asoosilb4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sav.ng"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654386570233:android:477bfcea49bc8064061328",
+        "android_client_info": {
+          "package_name": "saveeaseng.ng.savease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654386570233-kigpqmkcjpnc743v2q7mucjbj7ampf2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "saveeaseng.ng.savease",
+            "certificate_hash": "90058126071268fe3de3c2f4c7b29d1f6527da0e"
+          }
+        },
+        {
+          "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sP7pK377bFHTg4jmFN5807EqFPRdQ-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "654386570233-dmh6etc3ui3borg66rilu1asoosilb4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sav.ng"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:654386570233:android:643e721fec197890",
+        "android_client_info": {
+          "package_name": "saveeaseng.ng.saveease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "654386570233-6bpk6e94jlbt7e3bm752avmih9i1msii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "saveeaseng.ng.saveease",
+            "certificate_hash": "7ffad58ae98ee6c7402c69b5cf0dfce7fdfdfc0a"
+          }
+        },
+        {
+          "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2sP7pK377bFHTg4jmFN5807EqFPRdQ-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "654386570233-rqa32r8sc5g2j9hu6ealv43m8ngl8cpj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "654386570233-dmh6etc3ui3borg66rilu1asoosilb4d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sav.ng"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
